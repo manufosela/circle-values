@@ -15,7 +15,7 @@ npm i circle-values
   import 'circle-values/circle-values.js';
 </script>
 
-<circle-values width="300px" units="%" arc-width="40px" hide-legend>
+<circle-values width="300px" units="%" arc-width="10px" hide-legend>
   <circle-value value="20" color="red" title="title 1"></circle-value>
   <circle-value value="40" color="green" title="title 2"></circle-value>
   <circle-value value="30" color="blue" title="title 3"></circle-value>
@@ -23,7 +23,9 @@ npm i circle-values
 </circle-values>
 ```
 
-````
+## Example
+
+Codepen Example link [here](https://codepen.io/manufosela/pen/bGvZEgj).
 
 ## Linting and formatting
 
@@ -31,7 +33,7 @@ To scan the project for linting and formatting errors, run
 
 ```bash
 npm run lint
-````
+```
 
 To automatically fix linting and formatting errors, run
 
