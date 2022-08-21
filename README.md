@@ -15,8 +15,15 @@ npm i circle-values
   import 'circle-values/circle-values.js';
 </script>
 
-<circle-values></circle-values>
+<circle-values width="300px" units="%" arc-width="40px" hide-legend>
+  <circle-value value="20" color="red" title="title 1"></circle-value>
+  <circle-value value="40" color="green" title="title 2"></circle-value>
+  <circle-value value="30" color="blue" title="title 3"></circle-value>
+  [...more circle-values...]
+</circle-values>
 ```
+
+````
 
 ## Linting and formatting
 
@@ -24,7 +31,7 @@ To scan the project for linting and formatting errors, run
 
 ```bash
 npm run lint
-```
+````
 
 To automatically fix linting and formatting errors, run
 
@@ -59,7 +66,6 @@ To build a production version of Storybook, run
 ```bash
 npm run storybook:build
 ```
-
 
 ## Tooling configs
 
