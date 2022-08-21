@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        background: #fafafa;
+      }
+      #demo {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
+
+    <script type="module">
+      import { html, render } from 'lit';
+      import '../circle-values.js';
+
+      render(
+        html`
+          <circle-values width="200px" units="p" hide-legend>
+            <circle-value value="122" color="#feb95a" title="OK"></circle-value>
+            <circle-value
+              value="140"
+              color="#f2c8ee"
+              title="Empty"
+            ></circle-value>
+            <circle-value
+              value="169"
+              color="#20bfa9"
+              title="Pending"
+            ></circle-value>
+            <circle-value value="89" color="#ee786c" title="NOK"></circle-value>
+            <circle-value
+              value="230"
+              color="#ee6c00"
+              title="Error"
+            ></circle-value>
+          </circle-values>
+
+          <circle-values width="300px" units="%" arc-width="40px">
+            <circle-value value="20" color="red" title="0-15"></circle-value>
+            <circle-value value="40" color="green" title="16-35"></circle-value>
+            <circle-value value="30" color="blue" title="36-55"></circle-value>
+            <circle-value
+              value="10"
+              color="yellow"
+              title="&lt;56"
+            ></circle-value>
+          </circle-values>
+        `,
+        document.querySelector('#demo')
+      );
+    </script>
+  </body>
+</html>
