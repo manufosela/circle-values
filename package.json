@@ -3,9 +3,9 @@
   "description": "Webcomponent circle-values following open-wc recommendations",
   "license": "MIT",
   "author": "circle-values",
-  "version": "1.0.0",
-  "main": "circle-values.js",
-  "module": "index.js",
+  "version": "1.0.1",
+  "main": "index.js",
+  "module": "circle-values.js",
   "scripts": {
     "analyze": "cem analyze --litelement",
     "start": "web-dev-server",
